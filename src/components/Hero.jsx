@@ -1,6 +1,6 @@
 import { easeOut, motion, stagger } from "framer-motion";
 import { HERO_CONTENT } from "../constants";
-import jason from "../assets/jason-Root.webp";
+import rasmi from "../assets/rasmi.webp";
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -76,8 +76,8 @@ const Hero = () => {
           variants={imageVariants}
         >
           <img
-            src={jason}
-            alt="Jason Root"
+            src={rasmi}
+            alt="rasmi"
             width={650}
             height={650}
             className="rounded-3xl"
