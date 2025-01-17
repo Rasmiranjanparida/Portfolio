@@ -1,0 +1,20 @@
+@keyframes rightToLeftGlow {
+  0% {
+    background-position: 200% 0; /* Start off the screen to the right */
+  }
+  100% {
+    background-position: -200% 0; /* Move the gradient to the left */
+  }
+}
+
+.glow-text {
+  font-size: 1.50rem;
+  font-family: 'Brush Script MT', cursive;
+  font-weight: bold;
+  color: transparent; /* Make the text transparent so we can show the glowing effect */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%); /* Create a gradient from transparent to white */
+  background-size: 200% auto; /* Make the gradient big enough to animate */
+  -webkit-background-clip: text; /* Apply background-clip to text for Safari */
+  background-clip: text; /* Standardize background-clip for text */
+  animation: rightToLeftGlow 3s ease-in-out infinite; /* Animate the gradient from right to left */
+}
