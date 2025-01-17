@@ -1,11 +1,11 @@
-import About from "./componets/About";
-import BlurBackground from "./componets/BlurBackground";
-import Contacts from "./componets/Contacts";
-import Experience from "./componets/Experience";
-import Hero from "./componets/Hero";
-import Navbar from "./componets/NavBar";
-import Project from "./componets/Project";
-import Testimonial from "./componets/Testimonial";
+import About from "./components/About";
+import BlurBackground from "./components/BlurBackground";
+import Contacts from "./components/Contacts";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Project from "./components/Project";
+import Testimonial from "./components/Testimonial";
 import "./glow.css";
 
 const App = () => {
@@ -14,14 +14,13 @@ const App = () => {
       <BlurBackground />
       <Navbar />
       <main className="antialiased overflow-x-hidden max-w-7xl mx-auto relative z-10">
-      <Navbar />
-      <Hero/>
-      <Project/>
-      <About/>
-      <Experience/>
-      <Testimonial/>
-      <Contacts/>
-
+        <Navbar />
+        <Hero/>
+        <Project/>
+        <About/>
+        <Experience/>
+        <Testimonial/>
+        <Contacts/>
       </main>
     </div>
   );
